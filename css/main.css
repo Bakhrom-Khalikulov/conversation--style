@@ -51,8 +51,8 @@
     --converstation-text-color: #000;
     --user1-bg-color: #e6edf6;
     --user2-bg-color: #f2f2f2;
-    --block-bg-color: ffc2c1;
-    --input-text-color: 757575;
+    --block-bg-color: #ffc2c1;
+    --input-text-color: #757575;
 }
 
 html{
@@ -74,7 +74,7 @@ body{
     margin: 0;
     font-family: "Arial", sans-serif;
     font-weight: 400;
-    background-color: #fff;
+    background-color: var(--main-bg-color);
 }
 
 img{
@@ -100,8 +100,8 @@ img{
     max-width: 1440px;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 20px;
-    padding-left: 20px;
+    /* padding-right: 20px;
+    padding-left: 20px; */
 }
 
 ol,
@@ -115,4 +115,139 @@ ul{
 a{
     text-decoration: none;
 }
+
+/* ************** CONVERSATION STYLE STARTS**************** */
+.conversation-section{
+    margin: 120px auto;
+    width: 410px;
+    height: 500px;
+    background-color: var(--conversation-bg-color);
+}
+
+
+.conversation-start{
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--header-bg-color);
+}
+
+.conversation_title{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 17px;
+    color: var(--conversation-bg-color);
+}
+
+.conversation-about{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.conversation_date{
+    margin-top: 0;
+    margin-bottom: 25px;
+    padding-top: 25px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--input-text-color);
+    text-decoration: 
+}
+
+.conversation__time{
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: var(--input-text-color);
+}
+
+.conversation__user{
+    padding: 10px;
+    width: 100%;
+    max-width: 270px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--converstation-text-color);
+    background-color: var(--user1-bg-color);
+    border-radius: 3px;
+}
+
+.conversation__time1{
+    text-align: end;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: var(--input-text-color);
+}
+
+.conversation__user2{
+    margin-left: 100px;
+    padding: 10px;
+    width: 100%;
+    max-width: 270px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--converstation-text-color);
+    background-color: var(--user2-bg-color);
+    border-radius: 3px;
+}
+
+.conversation__user_{
+    padding: 10px;
+    width: 100%;
+    max-width: 90px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--converstation-text-color);
+    background-color: var(--user1-bg-color);
+    border-radius: 3px;
+}
+
+.conversation__user2_{
+    margin-left: 169px;
+    padding: 10px;
+    width: 100%;
+    max-width: 200px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--converstation-text-color);
+    background-color: var(--block-bg-color);
+    border-radius: 3px; 
+}
+
+.sending-message-area{
+    border-top: 1px solid var(--input-text-color);
+    text-align: center;
+}
+
+.message_area{
+    margin-top: 10px;
+    padding-bottom: 20px;
+    width: 309px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--converstation-text-color);
+}
+
+.message_send{
+    margin-top: 10px;
+    border: none;
+    font-weight: 600;
+    background-color: transparent;
+    color: var(--header-bg-color)
+}
+
+
+
+/* ************** CONVERSATION STYLE ENDS**************** */
 
